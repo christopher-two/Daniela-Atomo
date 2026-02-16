@@ -1,0 +1,17 @@
+---
+interface Props {
+    title: string;
+    id?: string;
+    className?: string;
+}
+
+const { title, id, className } = Astro.props;
+---
+
+<section id={id} class={`py-12 px-6 max-w-4xl mx-auto ${className}`}>
+    <div class="flex items-center gap-4 mb-8">
+        <h2 class="text-3xl md:text-4xl text-slate-900">{title}</h2>
+        <div class="h-px bg-pink-200 flex-grow mt-2"></div>
+    </div>
+    <slot />
+</section>

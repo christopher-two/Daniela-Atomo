@@ -1,0 +1,373 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import ExperienceItem from "../components/ExperienceItem.astro";
+import SkillBadge from "../components/SkillBadge.astro";
+
+// Daniela Navarro Galeana CV Content
+---
+
+<Layout
+	title="Daniela Navarro Galeana | CV - Comercio Internacional y Logística"
+	description="Daniela Navarro Galeana. Especialista en Comercio Internacional y Aduanas con experiencia en logística 3.0, gestión de almacenes y recursos humanos. Creadora de Override Logistics."
+>
+	<!-- Structured Data (JSON-LD) -->
+	<script
+		type="application/ld+json"
+		is:inline
+		slot="head"
+		set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Person",
+			name: "Daniela Navarro Galeana",
+			jobTitle: "Especialista en Comercio Internacional y Aduanas",
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: "Uruapan",
+				addressRegion: "Michoacán",
+				addressCountry: "MX",
+			},
+			email: "dn311136@gmail.com",
+			url: "https://danielanavarro.com",
+			alumniOf: "Universidad Politécnica de Uruapan",
+			hasOccupation: [
+				{
+					"@type": "Occupation",
+					name: "Especialista en Logística",
+				},
+				{
+					"@type": "Occupation",
+					name: "Analista de Comercio Internacional",
+				},
+			],
+		})}
+	></script>
+	<!-- Hero Section -->
+	<header class="relative pt-24 pb-20 px-6 overflow-hidden bg-white">
+		<div
+			class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-pink-100 rounded-full blur-[120px] opacity-40"
+		>
+		</div>
+		<div
+			class="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-pink-200 rounded-full blur-[120px] opacity-20"
+		>
+		</div>
+
+		<div class="max-w-4xl mx-auto relative z-10 text-center">
+			<h1
+				class="text-5xl md:text-8xl mb-6 text-slate-900 tracking-tight leading-tight"
+			>
+				Daniela <span class="text-gradient">Navarro</span> Galeana
+			</h1>
+			<p
+				class="text-xl md:text-2xl font-medium text-slate-500 mb-10 uppercase tracking-widest"
+			>
+				Comercio Internacional y Aduanas
+			</p>
+
+			<div
+				class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12"
+			>
+				<div class="flex flex-wrap justify-center gap-6 text-slate-600">
+					<a
+						href="mailto:dn311136@gmail.com"
+						class="flex items-center gap-2 hover:text-pink-500 transition-colors"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-5 h-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+							></path>
+						</svg>
+						dn311136@gmail.com
+					</a>
+					<a
+						href="tel:+524521321195"
+						class="flex items-center gap-2 hover:text-pink-500 transition-colors"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-5 h-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+							></path>
+						</svg>
+						452-132-1195
+					</a>
+					<a
+						href="https://daniela.atomo.click"
+						target="_blank"
+						class="flex items-center gap-2 hover:text-pink-500 transition-colors"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-5 h-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+							></path>
+						</svg>
+						daniela.atomo.click
+					</a>
+					<span class="flex items-center gap-2">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-5 h-5"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+							></path><path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+						</svg>
+						Uruapan, Michoacán
+					</span>
+				</div>
+			</div>
+
+			<a
+				href="https://images.cloud.christopher.com.mx/docs/Curr%C3%ADculum%20Agente%20comercial%20Profesional%20Blanco%20y%20negro.pdf"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="inline-flex items-center gap-3 px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-pink-600 hover:shadow-xl hover:shadow-pink-200 transition-all active:scale-95 group"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					class="w-6 h-6 group-hover:animate-bounce"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+					></path>
+				</svg>
+				Descargar CV Completo
+			</a>
+		</div>
+	</header>
+
+	<main class="bg-white">
+		<Section title="Experiencia Laboral" id="experiencia">
+			<ExperienceItem
+				title="Practicante de Logística (Proyecto Override Logistics)"
+				company="Plásticos del Cupatitzio"
+				period="Julio 2024 - Actual"
+			>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Lideré el desarrollo y despliegue de <strong
+						>'Override Logistics'</strong
+					>, una solución tecnológica integral diseñada para resolver
+					la falta de sistemas estandarizados en la logística
+					empresarial.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Diseñé la arquitectura funcional de un ecosistema multiplataforma
+					que incluyó aplicaciones móviles, de escritorio y paneles para
+					TV.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Optimicé procesos críticos de gestión de almacén, control de
+					transportes y logística general, centralizando la toma de decisiones
+					en una sola herramienta.
+				</li>
+				<p class="mt-4 text-slate-800 font-medium italic">
+					"Identifiqué la ausencia de un sistema claro y creamos una
+					solución digital disruptiva que transformó la eficiencia
+					operativa de la empresa."
+				</p>
+			</ExperienceItem>
+
+			<ExperienceItem
+				title="Vendedora en tienda de abarrotes"
+				company="Tienda 'Candy'"
+				period="Julio 2024 - Actual"
+			>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Atención al Cliente.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Gestión de caja y procesar cobros.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Reposición y organización de productos.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Recepción de mercancía.
+				</li>
+				<p class="mt-4 text-slate-800 font-medium italic">
+					"Contribuí al aumento de ventas a través de un servicio al
+					cliente proactivo y atento."
+				</p>
+			</ExperienceItem>
+
+			<ExperienceItem
+				title="Practicante en Área de Vacío, Almacén"
+				company="Grupo Modelo"
+				period="Septiembre 2024 - Diciembre 2024"
+			>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Apoyo en la gestión de inventarios y el monitoreo de entradas
+					y salidas de mercancía.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Verificación física de los productos devueltos y control de calidad
+					de los envases vacíos.
+				</li>
+				<p class="mt-4 text-slate-800 font-medium italic">
+					"Diseñé e implementé un proyecto interno para reorganizar
+					los materiales, con el fin de mejorar el espacio
+					desperdiciado."
+				</p>
+			</ExperienceItem>
+
+			<ExperienceItem
+				title="Pasante en el área de recursos Humanos"
+				company="Bonanza Fresh, Guacamole"
+				period="Septiembre 2023 - Diciembre 2023"
+			>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Apoyo en el proceso de reclutamiento y selección de personal.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Gestión y organización de expedientes de empleados.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Colaboración en programas de inducción para nuevos empleados.
+				</li>
+				<li class="flex gap-3 text-slate-600 pb-2">
+					<span class="text-pink-400 mt-1">•</span>
+					Asistencia logística en eventos internos y actividades de bienestar
+					laboral.
+				</li>
+				<p class="mt-4 text-slate-800 font-medium italic">
+					"Diseñé e implementé un manual de reclutamiento y selección,
+					contribuyendo a la estructuración de procesos en el área de
+					Recursos Humanos."
+				</p>
+			</ExperienceItem>
+		</Section>
+
+		<div class="bg-pink-50/30">
+			<Section title="Datos Académicos" id="educacion">
+				<div
+					class="bg-white p-8 rounded-3xl shadow-sm border border-pink-100"
+				>
+					<h3 class="text-2xl mb-2">
+						Comercio Internacional y Aduanas
+					</h3>
+					<p class="text-slate-500 font-medium mb-4">
+						Universidad Politecnica de Uruapan
+					</p>
+					<span
+						class="inline-block px-6 py-2 bg-pink-600 text-white rounded-full text-sm font-bold uppercase tracking-wider"
+					>
+						Estudios Concluidos
+					</span>
+				</div>
+			</Section>
+		</div>
+
+		<Section title="Habilidades e Idiomas" id="habilidades">
+			<div class="grid md:grid-cols-2 gap-12">
+				<div>
+					<h3
+						class="text-xl mb-6 text-slate-700 uppercase tracking-widest text-sm font-bold"
+					>
+						Habilidades
+					</h3>
+					<div class="flex flex-wrap gap-3">
+						<SkillBadge
+							label="Gestión de múltiples equipos bajo presión"
+						/>
+						<SkillBadge label="Organización" />
+						<SkillBadge label="Responsabilidad" />
+						<SkillBadge label="Gestión del tiempo" />
+					</div>
+				</div>
+				<div>
+					<h3
+						class="text-xl mb-6 text-slate-700 uppercase tracking-widest text-sm font-bold"
+					>
+						Idiomas
+					</h3>
+					<div class="space-y-4">
+						<div class="flex justify-between items-center">
+							<span class="text-lg font-medium">Inglés</span>
+							<span class="text-pink-500 font-bold"
+								>Avanzado | C1</span
+							>
+						</div>
+						<div
+							class="w-full h-2 bg-pink-100 rounded-full overflow-hidden"
+						>
+							<div class="w-[90%] h-full bg-pink-400"></div>
+						</div>
+
+						<div class="flex justify-between items-center mt-6">
+							<span class="text-lg font-medium">Español</span>
+							<span class="text-pink-500 font-bold">Nativo</span>
+						</div>
+						<div
+							class="w-full h-2 bg-pink-100 rounded-full overflow-hidden"
+						>
+							<div class="w-full h-full bg-pink-400"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Section>
+	</main>
+
+	<footer class="py-12 px-6 text-center border-t border-pink-50 bg-white">
+		<p class="text-slate-400 text-sm">
+			© 2024 Daniela Navarro Galeana. Diseñado con <span
+				class="text-pink-400">♥</span
+			>
+		</p>
+	</footer>
+</Layout>
+
+<style is:global>
+	@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap");
+</style>
